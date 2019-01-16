@@ -1,0 +1,17 @@
+---
+# Starting the script Ansible (you can change the script)
+
+- hosts: all
+  become: true
+  become_method: sudo
+  become_user: root
+  any_errors_fatal: true
+  vars_files:
+    - cfg.yml
+
+  roles:
+#    - pre_sys_cdh
+#    - hosts_cfg
+    - reboot_os
+    - jdk_install
+#    - hello

@@ -1,0 +1,4 @@
+hosts_file: /opt/data/docs/hosts
+tmp_jdk: /opt/mdh_jdk_install/
+uri_java: /usr/java/
+java_home: "{{ uri_java }}jdk1.8.0_144/"
